@@ -27,12 +27,13 @@ DOMAIN-SUFFIX,buzzsprout.com
 DOMAIN-SUFFIX,interface003.com
 DOMAIN-SUFFIX,wikifx.com
 DOMAIN-SUFFIX,wikibit.com
+DOMAIN-SUFFIX,wikiexpo.com
 DOMAIN-SUFFIX,fxeye.cc
 DOMAIN-SUFFIX,fxeye.net
 DOMAIN-SUFFIX,wikifxmanager.com
 DOMAIN-SUFFIX,wikiglobal.com
-DOMAIN-SUFFIX,wikiexpo.com
 DOMAIN-KEYWORD,fxeye
+DOMAIN-KEYWORD,wiki
 
 # 国外域名
 DOMAIN-SUFFIX,eu
