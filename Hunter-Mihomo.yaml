@@ -46,6 +46,10 @@ proxy-groups:
       - ✅节点选择
       - 🌐全球直连
       - ♻️自动选择
+geodata-mode: true
+geox-url:
+    geoip: "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat"
+    geosite: "https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat"
 rule-providers:
   LocalAreaNetwork:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list
