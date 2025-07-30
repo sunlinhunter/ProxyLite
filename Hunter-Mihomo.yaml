@@ -28,24 +28,24 @@ proxy-groups:
   - name: ✅ 节点选择
     type: select
     proxies:
-      - ♻️ 自动选择
-      - 🌐 全球直连
-  - name: ♻️ 自动选择
+      - ♻️自动选择
+      - 🌐全球直连
+  - name: ♻️自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
       - DIRECT
-  - name: 🌐 全球直连
+  - name: 🌐全球直连
     type: select
     proxies:
       - DIRECT
-  - name: 🐟 漏网之鱼
+  - name: 🐟漏网之鱼
     type: select
     proxies:
-      - ✅ 节点选择
-      - 🌐 全球直连
-      - ♻️ 自动选择
+      - ✅节点选择
+      - 🌐全球直连
+      - ♻️自动选择
 rule-providers:
   LocalAreaNetwork:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list
@@ -126,16 +126,16 @@ rule-providers:
     type: http
 
 rules:
-  - "RULE-SET,LocalAreaNetwork,🌐 全球直连"
-  - "RULE-SET,UnBan,🌐 全球直连"
-  - "RULE-SET,GoogleCN,🌐 全球直连"
-  - "RULE-SET,SteamCN,🌐 全球直连"
-  - "RULE-SET,ChinaMedia,🌐 全球直连"
-  - "RULE-SET,ProxyMedia,✅ 节点选择"
-  - "RULE-SET,ProxyGFWlist,✅ 节点选择"
-  - "RULE-SET,ProxyLite,✅ 节点选择"
-  - "RULE-SET,ChinaDomain,🌐 全球直连"
-  - "RULE-SET,ChinaCompanyIp,🌐 全球直连"
-  - "RULE-SET,Download,🌐 全球直连"
-  - "GEOIP,CN,🌐 全球直连"
-  - "MATCH,🐟 漏网之鱼"
+  - "RULE-SET,LocalAreaNetwork,🌐全球直连"
+  - "RULE-SET,UnBan,🌐全球直连"
+  - "RULE-SET,GoogleCN,🌐全球直连"
+  - "RULE-SET,SteamCN,🌐全球直连"
+  - "RULE-SET,ChinaMedia,🌐全球直连"
+  - "RULE-SET,ProxyMedia,✅节点选择"
+  - "RULE-SET,ProxyGFWlist,✅节点选择"
+  - "RULE-SET,ProxyLite,✅节点选择"
+  - "RULE-SET,ChinaDomain,🌐全球直连"
+  - "RULE-SET,ChinaCompanyIp,🌐全球直连"
+  - "RULE-SET,Download,🌐全球直连"
+  - "GEOIP,CN,🌐全球直连"
+  - "MATCH,🐟漏网之鱼"
