@@ -25,7 +25,7 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxy-groups:
-  - name: ✅ 节点选择
+  - name: ✅节点选择
     type: select
     proxies:
       - ♻️自动选择
@@ -124,7 +124,6 @@ rule-providers:
     interval: 86400
     format: text
     type: http
-
 rules:
   - "RULE-SET,LocalAreaNetwork,🌐全球直连"
   - "RULE-SET,UnBan,🌐全球直连"
