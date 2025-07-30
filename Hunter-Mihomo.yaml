@@ -26,6 +26,7 @@ dns:
     - tls://dns.google:853
 proxy-groups:
   - name: ✅节点选择
+    include-all: true
     type: select
     proxies:
       - ♻️自动选择
