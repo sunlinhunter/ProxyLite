@@ -48,6 +48,13 @@ proxy-groups:
       - 🌐全球直连
       - 🔃自动选择
 rule-providers:
+  ProxyLite:
+    url: https://raw.githubusercontent.com/sunlinhunter/ProxyLite/refs/heads/main/ProxyLite.list
+    path: ./ruleset/ProxyLite.list
+    behavior: domain
+    interval: 86400
+    format: text
+    type: http
   LocalAreaNetwork:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list
     path: ./ruleset/LocalAreaNetwork.list
@@ -97,13 +104,6 @@ rule-providers:
     interval: 86400
     format: text
     type: http
-  ProxyLite:
-    url: https://raw.githubusercontent.com/sunlinhunter/ProxyLite/refs/heads/main/ProxyLite.list
-    path: ./ruleset/ProxyLite.list
-    behavior: domain
-    interval: 86400
-    format: text
-    type: http
   ChinaDomain:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaDomain.list
     path: ./ruleset/ChinaDomain.list
@@ -126,6 +126,7 @@ rule-providers:
     format: text
     type: http
 rules:
+  - "RULE-SET,ProxyLite,💠节点选择" 
   - "RULE-SET,LocalAreaNetwork,🌐全球直连"
   - "RULE-SET,UnBan,🌐全球直连"
   - "RULE-SET,GoogleCN,🌐全球直连"
@@ -133,7 +134,6 @@ rules:
   - "RULE-SET,ChinaMedia,🌐全球直连"
   - "RULE-SET,ProxyMedia,💠节点选择"
   - "RULE-SET,ProxyGFWlist,💠节点选择"
-  - "RULE-SET,ProxyLite,💠节点选择"
   - "RULE-SET,ChinaDomain,🌐全球直连"
   - "RULE-SET,ChinaCompanyIp,🌐全球直连"
   - "RULE-SET,Download,🌐全球直连"
