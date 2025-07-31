@@ -62,23 +62,9 @@ rule-providers:
     interval: 86400
     format: text
     type: http
-  UnBan:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/UnBan.list
-    path: ./ruleset/UnBan.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
   GoogleCN:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/GoogleCN.list
     path: ./ruleset/GoogleCN.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
-  SteamCN:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Ruleset/SteamCN.list
-    path: ./ruleset/SteamCN.list
     behavior: classical
     interval: 86400
     format: text
@@ -128,14 +114,11 @@ rule-providers:
 rules:
   - "RULE-SET,ProxyLite,💠节点选择" 
   - "RULE-SET,LocalAreaNetwork,🌐全球直连"
-  - "RULE-SET,UnBan,🌐全球直连"
   - "RULE-SET,GoogleCN,🌐全球直连"
-  - "RULE-SET,SteamCN,🌐全球直连"
   - "RULE-SET,ChinaMedia,🌐全球直连"
   - "RULE-SET,ProxyMedia,💠节点选择"
   - "RULE-SET,ProxyGFWlist,💠节点选择"
   - "RULE-SET,ChinaDomain,🌐全球直连"
   - "RULE-SET,ChinaCompanyIp,🌐全球直连"
   - "RULE-SET,Download,🌐全球直连"
-  - "GEOIP,CN,🌐全球直连"
   - "MATCH,🐟漏网之鱼"
