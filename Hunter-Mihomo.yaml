@@ -25,13 +25,13 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxy-groups:
-  - name: ✅节点选择
+  - name: 💠节点选择
     include-all: true
     type: select
     proxies:
-      - ♻️自动选择
+      - 🔃自动选择
       - 🌐全球直连
-  - name: ♻️自动选择
+  - name: 🔃自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
@@ -44,9 +44,9 @@ proxy-groups:
   - name: 🐟漏网之鱼
     type: select
     proxies:
-      - ✅节点选择
+      - 💠节点选择
       - 🌐全球直连
-      - ♻️自动选择
+      - 🔃自动选择
 rule-providers:
   LocalAreaNetwork:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list
@@ -131,9 +131,9 @@ rules:
   - "RULE-SET,GoogleCN,🌐全球直连"
   - "RULE-SET,SteamCN,🌐全球直连"
   - "RULE-SET,ChinaMedia,🌐全球直连"
-  - "RULE-SET,ProxyMedia,✅节点选择"
-  - "RULE-SET,ProxyGFWlist,✅节点选择"
-  - "RULE-SET,ProxyLite,✅节点选择"
+  - "RULE-SET,ProxyMedia,💠节点选择"
+  - "RULE-SET,ProxyGFWlist,💠节点选择"
+  - "RULE-SET,ProxyLite,💠节点选择"
   - "RULE-SET,ChinaDomain,🌐全球直连"
   - "RULE-SET,ChinaCompanyIp,🌐全球直连"
   - "RULE-SET,Download,🌐全球直连"
