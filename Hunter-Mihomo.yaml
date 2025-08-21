@@ -55,13 +55,6 @@ rule-providers:
     interval: 86400
     format: text
     type: http
-  LocalAreaNetwork:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/LocalAreaNetwork.list
-    path: ./ruleset/LocalAreaNetwork.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
   GoogleCN:
     url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/GoogleCN.list
     path: ./ruleset/GoogleCN.list
@@ -97,29 +90,12 @@ rule-providers:
     interval: 86400
     format: text
     type: http
-  ChinaCompanyIp:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaCompanyIp.list
-    path: ./ruleset/ChinaCompanyIp.list
-    behavior: ipcidr
-    interval: 86400
-    format: text
-    type: http
-  Download:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/Download.list
-    path: ./ruleset/Download.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
 rules:
   - "RULE-SET,ProxyLite,💠节点选择" 
-  - "RULE-SET,LocalAreaNetwork,🌐全球直连"
   - "RULE-SET,GoogleCN,🌐全球直连"
   - "RULE-SET,ChinaMedia,🌐全球直连"
   - "RULE-SET,ProxyMedia,💠节点选择"
   - "RULE-SET,ProxyGFWlist,💠节点选择"
   - "RULE-SET,ChinaDomain,🌐全球直连"
-  - "RULE-SET,ChinaCompanyIp,🌐全球直连"
-  - "RULE-SET,Download,🌐全球直连"
   - "GEOIP,CN,🌐全球直连"
   - "MATCH,🐟漏网之鱼"
