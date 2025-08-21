@@ -55,47 +55,7 @@ rule-providers:
     interval: 86400
     format: text
     type: http
-  GoogleCN:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/GoogleCN.list
-    path: ./ruleset/GoogleCN.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
-  ChinaMedia:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaMedia.list
-    path: ./ruleset/ChinaMedia.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
-  ProxyMedia:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyMedia.list
-    path: ./ruleset/ProxyMedia.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
-  ProxyGFWlist:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ProxyGFWlist.list
-    path: ./ruleset/ProxyGFWlist.list
-    behavior: classical
-    interval: 86400
-    format: text
-    type: http
-  ChinaDomain:
-    url: https://testingcf.jsdelivr.net/gh/ACL4SSR/ACL4SSR@master/Clash/ChinaDomain.list
-    path: ./ruleset/ChinaDomain.list
-    behavior: domain
-    interval: 86400
-    format: text
-    type: http
 rules:
   - "RULE-SET,ProxyLite,💠节点选择" 
-  - "RULE-SET,GoogleCN,🌐全球直连"
-  - "RULE-SET,ChinaMedia,🌐全球直连"
-  - "RULE-SET,ProxyMedia,💠节点选择"
-  - "RULE-SET,ProxyGFWlist,💠节点选择"
-  - "RULE-SET,ChinaDomain,🌐全球直连"
   - "GEOIP,CN,🌐全球直连"
   - "MATCH,🐟漏网之鱼"
